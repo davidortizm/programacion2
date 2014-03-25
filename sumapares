@@ -1,0 +1,28 @@
+// dommm.cpp : Defines the entry point for the console application.
+// Autor:david ortiz
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+
+{
+	int a, b, res;
+	cout<<"introdusca un numero";
+	cin>>a;
+	cout<<"introdusca otro numero";
+    cin>>b;
+	if ((a%2==0)   &&(b%2 ==0))
+	  
+		res=a+b;
+
+	else
+	  
+		res=a*b;
+	  
+	cout<<res;
+	getch();
+}
