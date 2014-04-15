@@ -1,0 +1,27 @@
+// mientras.cpp : Defines the entry point for the console application.
+// autor: david ortiz
+
+ #include "stdafx.h"
+ #include <iostream>
+ #include "conio.h"
+
+
+ using namespace std;
+
+ void main()
+{
+ int N,suma,cont, i;  //Declarar variables
+ suma=0;
+ cont=2;
+ i=1;
+ cout<<"Ingrese el valor: ";
+ cin>>N;
+ while(i<=N)
+ {
+	 suma=suma+cont;
+     cont=cont+2;
+	 i=i+1;
+ }
+ cout<<"La suma es: "<<suma;
+getch();
+}
