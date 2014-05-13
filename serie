@@ -1,0 +1,45 @@
+// N1.cpp : Defines the entry point for the console application.
+// Ejercicio: serie
+// autor:david ortiz
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int factorial (int d);
+float potencia (float x , int n);
+
+void main ()
+{
+	int x,n,i;
+	float suma;
+	cout<<"ingresar el valor x: ";
+	cin>>x;
+	cout<<"ingresar el valor n: ";
+	cin>>n;
+	suma=0;
+
+    for (i=1;i<=n;i++);
+       suma+suma+potencia (x,i)/factorial (i);
+	cout<<"la valor de la suma es:" <<suma;
+	getch ();
+}
+
+int factorial (int d)
+{
+	int fact;
+	for (int i=1;i<=d;i++)
+		fact=fact*i;
+	return fact;
+}
+
+float potencia (float x , int n)
+{
+   float pot=1;
+   for (int i=1;i<=n;i++)
+	   pot=pot*x;
+   return pot;
+}
+
